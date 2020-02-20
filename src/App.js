@@ -1,4 +1,11 @@
 import React from 'react';
-import Home from './Home.js';
+import Login from './components/login.js';
+import Confirm from './components/confirm.js';
 
-function 
+export default function App() {
+    return (
+        <div>
+            <Confirm/>
+        </div>
+    );
+}

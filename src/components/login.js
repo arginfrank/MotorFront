@@ -3,7 +3,7 @@ import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles, createMuiTheme, ThemeProvider, withTheme } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import BG from './assets/image/back.png'
+import BG from '../assets/image/back.png'
 import Blur from 'react-blur'
 import CheckCircleOutlinedIcon from '@material-ui/icons/CheckCircleOutlined';
 import InputBase from '@material-ui/core/InputBase';
@@ -107,7 +107,7 @@ const useStyles = makeStyles(theme => ({
   
 }));
 
-export default function entry() {
+export default function Login() {
   const classes = useStyles();
 
   return (
@@ -135,12 +135,12 @@ export default function entry() {
                   </Grid>
               </Grid>
               <Grid item xs={12}>
-                  <Button
-                    variant="contained"
-                    className={classes.button}
-                        
-                    >ورود
-                  </Button>
+
+                      <Button
+                        variant="contained"
+                        className={classes.button}
+                        href="/confirm">ورود</Button>
+                  
               </Grid>
             </form>
             <div style={{ position: 'absolute', background: 'rgba(0,0,0,0.2)', color: '#fff', width: '100%', height: '9%',  transform: "translate(-50%, -50%)", left: '50%', bottom: '-5%', textAlign: "center", margin: 0,}}>
